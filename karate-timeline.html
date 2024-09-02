@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"pnc\/happyPath\/happyPath-2[1:8]","start":1725304576170,"end":1725304580415,"title":"pnc\/happyPath\/happyPath-2[1:8] 19:16:16.170-19:16:20.415 PKI Gateway Simple Enroll"},{"id":2,"group":1,"content":"pnc\/happyPath\/happyPath-2[2:12]","start":1725304580424,"end":1725304583320,"title":"pnc\/happyPath\/happyPath-2[2:12] 19:16:20.424-19:16:23.320 PKI Gateway CaCerts"},{"id":3,"group":1,"content":"pnc\/happyPath\/happyPath-2[3:16]","start":1725304583327,"end":1725304583986,"title":"pnc\/happyPath\/happyPath-2[3:16] 19:16:23.327-19:16:23.986 rcp"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

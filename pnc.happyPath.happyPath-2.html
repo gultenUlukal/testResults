@@ -1,0 +1,1882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"a70cccdd-0e5d-4c21-9a80-809b1720b88a",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>pnc.happyPath.happyPath-2</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>dev</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-09-02 07:16:23 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>PKI Gateway Simple Enroll</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:12]"><span>[2:12]</span> <span>PKI Gateway CaCerts</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:16]"><span>[3:16]</span> <span>rcp</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">pnc/happyPath/happyPath-2.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Happy Path-2</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">happyPath-2</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">PKI Gateway Simple Enroll</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4112</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>callonce read(&#39;../commons/get_access_token.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1085</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">19:16:17.376 &lt;&lt; lock released, cached callonce: read(&#39;../commons/get_access_token.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">pnc.happyPath.commons.get_access_token</div>
+      </div>
+      <div class="time-cell passed">1036</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url authUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.4">19:16:16.219 karate.env system property was: dev 
+19:16:16.311 &gt;&gt; lock acquired, begin callonce: read(&#39;../commons/get_access_token.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure logPrettyRequest = true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure logPrettyResponse = true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/oauth/token&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request tokenRequest</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1016</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.11">19:16:16.697 request:
+1 &gt; POST https://auth.eu.plugncharge.hubject.com/oauth/token
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 220
+1 &gt; Host: auth.eu.plugncharge.hubject.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.24)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;client_id&quot;: &quot;kOjXTC38gO2KU2hf9eWSURl0ITcFfJZq&quot;,
+  &quot;client_secret&quot;: &quot;CG2fZLFp69jWAr2236TS-9b7NZIl_wu6fNKvTasnjvVtvV1aSXuKc5nBpqslyWq8&quot;,
+  &quot;audience&quot;: &quot;https://eu.plugncharge-test.hubject.com&quot;,
+  &quot;grant_type&quot;: &quot;client_credentials&quot;
+}
+
+
+19:16:17.353 response time in milliseconds: 643
+1 &lt; 200
+1 &lt; Date: Mon, 02 Sep 2024 19:16:17 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; CF-Ray: 8bcfd5666a7407b9-IAD
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Cache-Control: no-store
+1 &lt; Set-Cookie: did=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4; Max-Age=31557600; Path=/; Expires=Wed, 03 Sep 2025 01:16:17 GMT; HttpOnly; Secure; SameSite=None
+1 &lt; Set-Cookie: did_compat=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4; Max-Age=31557600; Path=/; Expires=Wed, 03 Sep 2025 01:16:17 GMT; HttpOnly; Secure
+1 &lt; Set-Cookie: __cf_bm=7DdLiphjIqAY2nZpHeaqb9byRgm2lNmpdWaVn.Ook8U-1725304577-1.0.1.1-h3Ip7LVrlJrZ0lSDw.1tE34GAvFd9_zRlcdvLvHaWNbGcsfeuNjGzKXQopc2_u5V; path=/; expires=Mon, 02-Sep-24 19:46:17 GMT; domain=.auth.eu.plugncharge.hubject.com; HttpOnly; Secure; SameSite=None
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Vary: Accept-Encoding, Origin
+1 &lt; Pragma: no-cache
+1 &lt; X-Auth0-DL: 27
+1 &lt; X-Auth0-RequestId: 2f3df422fba7ee962777
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-RateLimit-Limit: 100
+1 &lt; X-RateLimit-Remaining: 99
+1 &lt; X-RateLimit-Reset: 1725304578
+1 &lt; Server: cloudflare
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{
+  &quot;access_token&quot;: &quot;eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkJ3eEV0TkFGUnpSM3JlNVF2elM2QyJ9.eyJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcm9sZSI6WyJPRU0iLCJBRE1JTiJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcGNpZCI6WyJIVUIiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2VtYWlkIjpbIkRFSFVCIiwiRU1QNzciLCJFTVA5OSIsIkhVQkFUIiwiREVJQ0UiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2NsaWVudF9uYW1lIjpbIkh1YmplY3QgR21iSCJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcmFfYWN0aXZlIjpbImZhbHNlIl0sImh0dHBzOi8vZXUucGx1Z25jaGFyZ2UtdGVzdC5odWJqZWN0LmNvbS9jbGllbnRfYXBwIjoiSHViamVjdCBBZG1pbiIsImlzcyI6Imh0dHBzOi8vYXV0aC5ldS5wbHVnbmNoYXJnZS5odWJqZWN0LmNvbS8iLCJzdWIiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacUBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tIiwiaWF0IjoxNzI1MzA0NTc3LCJleHAiOjE3MjUzOTA5NzcsInNjb3BlIjoicmNwc2VydmljZSBwY3BzZXJ2aWNlIGNjcHNlcnZpY2UgY3BzZXJ2aWNlIGF1ZGktb2VtLWJhY2tlbmQgcGtpZ2F0ZXdheSB3ZWJob29rcyByYXNlcnZpY2Ugd2ViaG9va3MyIHBjcHNlcnZpY2UtYXNpYSByY3BzZXJ2aWNlLWFzaWEgY2Nwc2VydmljZS1hc2lhIGVjc2VydmljZSBjZHNlcnZpY2Ugb2NzcC1jaGVja2VyIG5leHVzLWFkYXB0ZXIiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJhenAiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacSIsInBlcm1pc3Npb25zIjpbInJjcHNlcnZpY2UiLCJwY3BzZXJ2aWNlIiwiY2Nwc2VydmljZSIsImNwc2VydmljZSIsImF1ZGktb2VtLWJhY2tlbmQiLCJwa2lnYXRld2F5Iiwid2ViaG9va3MiLCJyYXNlcnZpY2UiLCJ3ZWJob29rczIiLCJwY3BzZXJ2aWNlLWFzaWEiLCJyY3BzZXJ2aWNlLWFzaWEiLCJjY3BzZXJ2aWNlLWFzaWEiLCJlY3NlcnZpY2UiLCJjZHNlcnZpY2UiLCJvY3NwLWNoZWNrZXIiLCJuZXh1cy1hZGFwdGVyIl19.J2rfA5tE-O-ObtMTEtVI6l1nrhqcp2knUiRJgXv1dm_0PYRwGj2MywmGf5XMvHaAs8Vd9rhBeb0mDJTeKCPhX3DrG-EGrIETu7JhbitMZZezSKMhdhnkfTPREgAYz-PLp6n9hO6iSbHd15x-ArQAh_b3dgBFQeir1Ya5r4XBRMMGfc_kwPSf9IYQvmQr4xbycKXFFvAUd57f7d9X9wSc0QCsm-eOrJV-JYu3UYfGE0H-sAAwoD7X-qrqt7d_xs9d3yNYc5qltfaDFmfOWU4hrqs8XMtVGa37yshIdXkPkyGT3OkbvHNHJHcJ5queHucw32M7y4oWhe6k4kl4Y4sc6g&quot;,
+  &quot;scope&quot;: &quot;rcpservice pcpservice ccpservice cpservice audi-oem-backend pkigateway webhooks raservice webhooks2 pcpservice-asia rcpservice-asia ccpservice-asia ecservice cdservice ocsp-checker nexus-adapter&quot;,
+  &quot;expires_in&quot;: 86400,
+  &quot;token_type&quot;: &quot;Bearer&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = read(&#39;../scripts/headers.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure url = apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure logPrettyRequest = true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure logPrettyResponse = token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&#39;../commons/pki_gateway_simple_enroll.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3027</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.9.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">pnc.happyPath.commons.pki_gateway_simple_enroll</div>
+      </div>
+      <div class="time-cell passed">2979</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure charset = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/.well-known/cpo/simpleenroll&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/pkcs10&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request read(&#39;../requests/csrs/contractCert.csr&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1308</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.10">19:16:17.440 request:
+1 &gt; POST https://eu.plugncharge-test.hubject.com/.well-known/cpo/simpleenroll
+1 &gt; Content-Type: application/pkcs10
+1 &gt; Cookie: did_compat=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4; __cf_bm=7DdLiphjIqAY2nZpHeaqb9byRgm2lNmpdWaVn.Ook8U-1725304577-1.0.1.1-h3Ip7LVrlJrZ0lSDw.1tE34GAvFd9_zRlcdvLvHaWNbGcsfeuNjGzKXQopc2_u5V; did=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkJ3eEV0TkFGUnpSM3JlNVF2elM2QyJ9.eyJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcm9sZSI6WyJPRU0iLCJBRE1JTiJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcGNpZCI6WyJIVUIiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2VtYWlkIjpbIkRFSFVCIiwiRU1QNzciLCJFTVA5OSIsIkhVQkFUIiwiREVJQ0UiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2NsaWVudF9uYW1lIjpbIkh1YmplY3QgR21iSCJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcmFfYWN0aXZlIjpbImZhbHNlIl0sImh0dHBzOi8vZXUucGx1Z25jaGFyZ2UtdGVzdC5odWJqZWN0LmNvbS9jbGllbnRfYXBwIjoiSHViamVjdCBBZG1pbiIsImlzcyI6Imh0dHBzOi8vYXV0aC5ldS5wbHVnbmNoYXJnZS5odWJqZWN0LmNvbS8iLCJzdWIiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacUBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tIiwiaWF0IjoxNzI1MzA0NTc3LCJleHAiOjE3MjUzOTA5NzcsInNjb3BlIjoicmNwc2VydmljZSBwY3BzZXJ2aWNlIGNjcHNlcnZpY2UgY3BzZXJ2aWNlIGF1ZGktb2VtLWJhY2tlbmQgcGtpZ2F0ZXdheSB3ZWJob29rcyByYXNlcnZpY2Ugd2ViaG9va3MyIHBjcHNlcnZpY2UtYXNpYSByY3BzZXJ2aWNlLWFzaWEgY2Nwc2VydmljZS1hc2lhIGVjc2VydmljZSBjZHNlcnZpY2Ugb2NzcC1jaGVja2VyIG5leHVzLWFkYXB0ZXIiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJhenAiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacSIsInBlcm1pc3Npb25zIjpbInJjcHNlcnZpY2UiLCJwY3BzZXJ2aWNlIiwiY2Nwc2VydmljZSIsImNwc2VydmljZSIsImF1ZGktb2VtLWJhY2tlbmQiLCJwa2lnYXRld2F5Iiwid2ViaG9va3MiLCJyYXNlcnZpY2UiLCJ3ZWJob29rczIiLCJwY3BzZXJ2aWNlLWFzaWEiLCJyY3BzZXJ2aWNlLWFzaWEiLCJjY3BzZXJ2aWNlLWFzaWEiLCJlY3NlcnZpY2UiLCJjZHNlcnZpY2UiLCJvY3NwLWNoZWNrZXIiLCJuZXh1cy1hZGFwdGVyIl19.J2rfA5tE-O-ObtMTEtVI6l1nrhqcp2knUiRJgXv1dm_0PYRwGj2MywmGf5XMvHaAs8Vd9rhBeb0mDJTeKCPhX3DrG-EGrIETu7JhbitMZZezSKMhdhnkfTPREgAYz-PLp6n9hO6iSbHd15x-ArQAh_b3dgBFQeir1Ya5r4XBRMMGfc_kwPSf9IYQvmQr4xbycKXFFvAUd57f7d9X9wSc0QCsm-eOrJV-JYu3UYfGE0H-sAAwoD7X-qrqt7d_xs9d3yNYc5qltfaDFmfOWU4hrqs8XMtVGa37yshIdXkPkyGT3OkbvHNHJHcJ5queHucw32M7y4oWhe6k4kl4Y4sc6g
+1 &gt; Content-Length: 448
+1 &gt; Host: eu.plugncharge-test.hubject.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.24)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:16:18.731 response time in milliseconds: 1289
+1 &lt; 200
+1 &lt; content-type: text/plain
+1 &lt; date: Mon, 02 Sep 2024 19:16:17 GMT
+1 &lt; content-length: 806
+1 &lt; cache-control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; pragma: no-cache
+1 &lt; expires: 0
+1 &lt; x-content-type-options: nosniff
+1 &lt; strict-transport-security: max-age=31536000 ; includeSubDomains
+1 &lt; x-frame-options: DENY
+1 &lt; x-xss-protection: 0
+1 &lt; referrer-policy: no-referrer
+MIICUAYJKoZIhvcNAQcCoIICQTCCAj0CAQExADALBgkqhkiG9w0BBwGgggIlMIICITCCAcegAwIB
+AgIQSvDIouNVcV19K9aJnnTaSzAKBggqhkjOPQQDAjBEMQswCQYDVQQGEwJERTEVMBMGA1UEChMM
+SHViamVjdCBHbWJIMR4wHAYDVQQDExVDUE8gU3ViMiBDQSBRQSBHMS4yLjIwHhcNMjQwODI2MTEx
+NzQxWhcNMjQxMTI2MTExNzQxWjBYMQswCQYDVQQGEwJERTEZMBcGA1UEChMQUklTRSBWMkcgUHJv
+amVjdDEZMBcGA1UEAxMQREUtQUJDLUMxMjNBQkM1NjETMBEGCgmSJomT8ixkARkWA0NQTzBZMBMG
+ByqGSM49AgEGCCqGSM49AwEHA0IABJUyXNWBuE/Z5S7as/EYz8/ncOqKub2a2ecybQf6wsUHW1oE
+lh1h9SL8YkdeA7gfiThxqfX9CkOV3MnR+pXW2aejgYYwgYMwDAYDVR0TAQH/BAIwADARBgNVHQ4E
+CgQISc+2bBiFKcYwEwYDVR0jBAwwCoAIR4GyQRE6Eb8wOwYIKwYBBQUHAQEELzAtMCsGCCsGAQUF
+BzABhh9odHRwOi8vb2NzcC1xYS5odWJqZWN0LmNvbTo4MDgwMA4GA1UdDwEB/wQEAwIDiDAKBggq
+hkjOPQQDAgNIADBFAiEA3PZAeWgecdiwG9zYd3dEfr9Y0FaoLAheDNcmov5GrJgCIG+sMugLlOd2
+Xye1HUMENk0i6H/Mt3wEVbFSPWSUtHuAMQA=
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure charset = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/.well-known/oem/simpleenroll&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/pkcs10&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request read(&#39;../requests/csrs/contractCert.csr&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">995</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.17">19:16:18.754 request:
+1 &gt; POST https://eu.plugncharge-test.hubject.com/.well-known/oem/simpleenroll
+1 &gt; Content-Type: application/pkcs10
+1 &gt; Cookie: did_compat=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4; __cf_bm=7DdLiphjIqAY2nZpHeaqb9byRgm2lNmpdWaVn.Ook8U-1725304577-1.0.1.1-h3Ip7LVrlJrZ0lSDw.1tE34GAvFd9_zRlcdvLvHaWNbGcsfeuNjGzKXQopc2_u5V; did=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkJ3eEV0TkFGUnpSM3JlNVF2elM2QyJ9.eyJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcm9sZSI6WyJPRU0iLCJBRE1JTiJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcGNpZCI6WyJIVUIiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2VtYWlkIjpbIkRFSFVCIiwiRU1QNzciLCJFTVA5OSIsIkhVQkFUIiwiREVJQ0UiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2NsaWVudF9uYW1lIjpbIkh1YmplY3QgR21iSCJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcmFfYWN0aXZlIjpbImZhbHNlIl0sImh0dHBzOi8vZXUucGx1Z25jaGFyZ2UtdGVzdC5odWJqZWN0LmNvbS9jbGllbnRfYXBwIjoiSHViamVjdCBBZG1pbiIsImlzcyI6Imh0dHBzOi8vYXV0aC5ldS5wbHVnbmNoYXJnZS5odWJqZWN0LmNvbS8iLCJzdWIiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacUBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tIiwiaWF0IjoxNzI1MzA0NTc3LCJleHAiOjE3MjUzOTA5NzcsInNjb3BlIjoicmNwc2VydmljZSBwY3BzZXJ2aWNlIGNjcHNlcnZpY2UgY3BzZXJ2aWNlIGF1ZGktb2VtLWJhY2tlbmQgcGtpZ2F0ZXdheSB3ZWJob29rcyByYXNlcnZpY2Ugd2ViaG9va3MyIHBjcHNlcnZpY2UtYXNpYSByY3BzZXJ2aWNlLWFzaWEgY2Nwc2VydmljZS1hc2lhIGVjc2VydmljZSBjZHNlcnZpY2Ugb2NzcC1jaGVja2VyIG5leHVzLWFkYXB0ZXIiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJhenAiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacSIsInBlcm1pc3Npb25zIjpbInJjcHNlcnZpY2UiLCJwY3BzZXJ2aWNlIiwiY2Nwc2VydmljZSIsImNwc2VydmljZSIsImF1ZGktb2VtLWJhY2tlbmQiLCJwa2lnYXRld2F5Iiwid2ViaG9va3MiLCJyYXNlcnZpY2UiLCJ3ZWJob29rczIiLCJwY3BzZXJ2aWNlLWFzaWEiLCJyY3BzZXJ2aWNlLWFzaWEiLCJjY3BzZXJ2aWNlLWFzaWEiLCJlY3NlcnZpY2UiLCJjZHNlcnZpY2UiLCJvY3NwLWNoZWNrZXIiLCJuZXh1cy1hZGFwdGVyIl19.J2rfA5tE-O-ObtMTEtVI6l1nrhqcp2knUiRJgXv1dm_0PYRwGj2MywmGf5XMvHaAs8Vd9rhBeb0mDJTeKCPhX3DrG-EGrIETu7JhbitMZZezSKMhdhnkfTPREgAYz-PLp6n9hO6iSbHd15x-ArQAh_b3dgBFQeir1Ya5r4XBRMMGfc_kwPSf9IYQvmQr4xbycKXFFvAUd57f7d9X9wSc0QCsm-eOrJV-JYu3UYfGE0H-sAAwoD7X-qrqt7d_xs9d3yNYc5qltfaDFmfOWU4hrqs8XMtVGa37yshIdXkPkyGT3OkbvHNHJHcJ5queHucw32M7y4oWhe6k4kl4Y4sc6g
+1 &gt; Content-Length: 448
+1 &gt; Host: eu.plugncharge-test.hubject.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.24)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:16:19.741 response time in milliseconds: 986
+1 &lt; 200
+1 &lt; content-transfer-encoding: base64
+1 &lt; content-type: application/pkcs7-mime; smime-type=certs-only
+1 &lt; date: Mon, 02 Sep 2024 19:16:19 GMT
+1 &lt; content-length: 3140
+1 &lt; cache-control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; pragma: no-cache
+1 &lt; expires: 0
+1 &lt; x-content-type-options: nosniff
+1 &lt; strict-transport-security: max-age=31536000 ; includeSubDomains
+1 &lt; x-frame-options: DENY
+1 &lt; x-xss-protection: 0
+1 &lt; referrer-policy: no-referrer
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure charset = null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.21">
+      <div class="step-ref passed">21</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/.well-known/mo/simpleenroll&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.22">
+      <div class="step-ref passed">22</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/pkcs10&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.23">
+      <div class="step-ref passed">23</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request read(&#39;../requests/csrs/contractCert.csr&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.24">
+      <div class="step-ref passed">24</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">664</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9.0.call.0.24">19:16:19.753 request:
+1 &gt; POST https://eu.plugncharge-test.hubject.com/.well-known/mo/simpleenroll
+1 &gt; Content-Type: application/pkcs10
+1 &gt; Cookie: did_compat=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4; __cf_bm=7DdLiphjIqAY2nZpHeaqb9byRgm2lNmpdWaVn.Ook8U-1725304577-1.0.1.1-h3Ip7LVrlJrZ0lSDw.1tE34GAvFd9_zRlcdvLvHaWNbGcsfeuNjGzKXQopc2_u5V; did=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkJ3eEV0TkFGUnpSM3JlNVF2elM2QyJ9.eyJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcm9sZSI6WyJPRU0iLCJBRE1JTiJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcGNpZCI6WyJIVUIiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2VtYWlkIjpbIkRFSFVCIiwiRU1QNzciLCJFTVA5OSIsIkhVQkFUIiwiREVJQ0UiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2NsaWVudF9uYW1lIjpbIkh1YmplY3QgR21iSCJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcmFfYWN0aXZlIjpbImZhbHNlIl0sImh0dHBzOi8vZXUucGx1Z25jaGFyZ2UtdGVzdC5odWJqZWN0LmNvbS9jbGllbnRfYXBwIjoiSHViamVjdCBBZG1pbiIsImlzcyI6Imh0dHBzOi8vYXV0aC5ldS5wbHVnbmNoYXJnZS5odWJqZWN0LmNvbS8iLCJzdWIiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacUBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tIiwiaWF0IjoxNzI1MzA0NTc3LCJleHAiOjE3MjUzOTA5NzcsInNjb3BlIjoicmNwc2VydmljZSBwY3BzZXJ2aWNlIGNjcHNlcnZpY2UgY3BzZXJ2aWNlIGF1ZGktb2VtLWJhY2tlbmQgcGtpZ2F0ZXdheSB3ZWJob29rcyByYXNlcnZpY2Ugd2ViaG9va3MyIHBjcHNlcnZpY2UtYXNpYSByY3BzZXJ2aWNlLWFzaWEgY2Nwc2VydmljZS1hc2lhIGVjc2VydmljZSBjZHNlcnZpY2Ugb2NzcC1jaGVja2VyIG5leHVzLWFkYXB0ZXIiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJhenAiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacSIsInBlcm1pc3Npb25zIjpbInJjcHNlcnZpY2UiLCJwY3BzZXJ2aWNlIiwiY2Nwc2VydmljZSIsImNwc2VydmljZSIsImF1ZGktb2VtLWJhY2tlbmQiLCJwa2lnYXRld2F5Iiwid2ViaG9va3MiLCJyYXNlcnZpY2UiLCJ3ZWJob29rczIiLCJwY3BzZXJ2aWNlLWFzaWEiLCJyY3BzZXJ2aWNlLWFzaWEiLCJjY3BzZXJ2aWNlLWFzaWEiLCJlY3NlcnZpY2UiLCJjZHNlcnZpY2UiLCJvY3NwLWNoZWNrZXIiLCJuZXh1cy1hZGFwdGVyIl19.J2rfA5tE-O-ObtMTEtVI6l1nrhqcp2knUiRJgXv1dm_0PYRwGj2MywmGf5XMvHaAs8Vd9rhBeb0mDJTeKCPhX3DrG-EGrIETu7JhbitMZZezSKMhdhnkfTPREgAYz-PLp6n9hO6iSbHd15x-ArQAh_b3dgBFQeir1Ya5r4XBRMMGfc_kwPSf9IYQvmQr4xbycKXFFvAUd57f7d9X9wSc0QCsm-eOrJV-JYu3UYfGE0H-sAAwoD7X-qrqt7d_xs9d3yNYc5qltfaDFmfOWU4hrqs8XMtVGa37yshIdXkPkyGT3OkbvHNHJHcJ5queHucw32M7y4oWhe6k4kl4Y4sc6g
+1 &gt; Content-Length: 448
+1 &gt; Host: eu.plugncharge-test.hubject.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.24)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:16:20.413 response time in milliseconds: 659
+1 &lt; 200
+1 &lt; content-transfer-encoding: base64
+1 &lt; content-type: application/pkcs7-mime; smime-type=certs-only
+1 &lt; date: Mon, 02 Sep 2024 19:16:19 GMT
+1 &lt; content-length: 3132
+1 &lt; cache-control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; pragma: no-cache
+1 &lt; expires: 0
+1 &lt; x-content-type-options: nosniff
+1 &lt; strict-transport-security: max-age=31536000 ; includeSubDomains
+1 &lt; x-frame-options: DENY
+1 &lt; x-xss-protection: 0
+1 &lt; referrer-policy: no-referrer
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.9.0.call">
+    <div class="step-container" id="0.9.0.call.0.25">
+      <div class="step-ref passed">25</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">happyPath-2</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:12]</span>
+                <span class="scenario-name">PKI Gateway CaCerts</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2890</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:12]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>callonce read(&#39;../commons/get_access_token.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">19:16:20.428 karate.env system property was: dev 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&#39;../commons/ca_certs.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2882</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.13.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">pnc.happyPath.commons.ca_certs</div>
+      </div>
+      <div class="time-cell passed">2858</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.4">
+      <div class="step-ref passed">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/.well-known/cpo/cacerts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">923</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13.0.call.0.5">19:16:20.450 request:
+1 &gt; GET https://eu.plugncharge-test.hubject.com/.well-known/cpo/cacerts
+1 &gt; Cookie: did_compat=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4; __cf_bm=7DdLiphjIqAY2nZpHeaqb9byRgm2lNmpdWaVn.Ook8U-1725304577-1.0.1.1-h3Ip7LVrlJrZ0lSDw.1tE34GAvFd9_zRlcdvLvHaWNbGcsfeuNjGzKXQopc2_u5V; did=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkJ3eEV0TkFGUnpSM3JlNVF2elM2QyJ9.eyJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcm9sZSI6WyJPRU0iLCJBRE1JTiJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcGNpZCI6WyJIVUIiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2VtYWlkIjpbIkRFSFVCIiwiRU1QNzciLCJFTVA5OSIsIkhVQkFUIiwiREVJQ0UiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2NsaWVudF9uYW1lIjpbIkh1YmplY3QgR21iSCJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcmFfYWN0aXZlIjpbImZhbHNlIl0sImh0dHBzOi8vZXUucGx1Z25jaGFyZ2UtdGVzdC5odWJqZWN0LmNvbS9jbGllbnRfYXBwIjoiSHViamVjdCBBZG1pbiIsImlzcyI6Imh0dHBzOi8vYXV0aC5ldS5wbHVnbmNoYXJnZS5odWJqZWN0LmNvbS8iLCJzdWIiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacUBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tIiwiaWF0IjoxNzI1MzA0NTc3LCJleHAiOjE3MjUzOTA5NzcsInNjb3BlIjoicmNwc2VydmljZSBwY3BzZXJ2aWNlIGNjcHNlcnZpY2UgY3BzZXJ2aWNlIGF1ZGktb2VtLWJhY2tlbmQgcGtpZ2F0ZXdheSB3ZWJob29rcyByYXNlcnZpY2Ugd2ViaG9va3MyIHBjcHNlcnZpY2UtYXNpYSByY3BzZXJ2aWNlLWFzaWEgY2Nwc2VydmljZS1hc2lhIGVjc2VydmljZSBjZHNlcnZpY2Ugb2NzcC1jaGVja2VyIG5leHVzLWFkYXB0ZXIiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJhenAiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacSIsInBlcm1pc3Npb25zIjpbInJjcHNlcnZpY2UiLCJwY3BzZXJ2aWNlIiwiY2Nwc2VydmljZSIsImNwc2VydmljZSIsImF1ZGktb2VtLWJhY2tlbmQiLCJwa2lnYXRld2F5Iiwid2ViaG9va3MiLCJyYXNlcnZpY2UiLCJ3ZWJob29rczIiLCJwY3BzZXJ2aWNlLWFzaWEiLCJyY3BzZXJ2aWNlLWFzaWEiLCJjY3BzZXJ2aWNlLWFzaWEiLCJlY3NlcnZpY2UiLCJjZHNlcnZpY2UiLCJvY3NwLWNoZWNrZXIiLCJuZXh1cy1hZGFwdGVyIl19.J2rfA5tE-O-ObtMTEtVI6l1nrhqcp2knUiRJgXv1dm_0PYRwGj2MywmGf5XMvHaAs8Vd9rhBeb0mDJTeKCPhX3DrG-EGrIETu7JhbitMZZezSKMhdhnkfTPREgAYz-PLp6n9hO6iSbHd15x-ArQAh_b3dgBFQeir1Ya5r4XBRMMGfc_kwPSf9IYQvmQr4xbycKXFFvAUd57f7d9X9wSc0QCsm-eOrJV-JYu3UYfGE0H-sAAwoD7X-qrqt7d_xs9d3yNYc5qltfaDFmfOWU4hrqs8XMtVGa37yshIdXkPkyGT3OkbvHNHJHcJ5queHucw32M7y4oWhe6k4kl4Y4sc6g
+1 &gt; Host: eu.plugncharge-test.hubject.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.24)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:16:21.369 response time in milliseconds: 917
+1 &lt; 200
+1 &lt; content-transfer-encoding: base64
+1 &lt; content-type: application/pkcs7-mime; smime-type=certs-only
+1 &lt; date: Mon, 02 Sep 2024 19:16:21 GMT
+1 &lt; content-length: 2372
+1 &lt; cache-control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; pragma: no-cache
+1 &lt; expires: 0
+1 &lt; x-content-type-options: nosniff
+1 &lt; strict-transport-security: max-age=31536000 ; includeSubDomains
+1 &lt; x-frame-options: DENY
+1 &lt; x-xss-protection: 0
+1 &lt; referrer-policy: no-referrer
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/.well-known/mo/cacerts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">953</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13.0.call.0.11">19:16:21.382 request:
+1 &gt; GET https://eu.plugncharge-test.hubject.com/.well-known/mo/cacerts
+1 &gt; Cookie: did_compat=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4; __cf_bm=7DdLiphjIqAY2nZpHeaqb9byRgm2lNmpdWaVn.Ook8U-1725304577-1.0.1.1-h3Ip7LVrlJrZ0lSDw.1tE34GAvFd9_zRlcdvLvHaWNbGcsfeuNjGzKXQopc2_u5V; did=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkJ3eEV0TkFGUnpSM3JlNVF2elM2QyJ9.eyJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcm9sZSI6WyJPRU0iLCJBRE1JTiJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcGNpZCI6WyJIVUIiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2VtYWlkIjpbIkRFSFVCIiwiRU1QNzciLCJFTVA5OSIsIkhVQkFUIiwiREVJQ0UiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2NsaWVudF9uYW1lIjpbIkh1YmplY3QgR21iSCJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcmFfYWN0aXZlIjpbImZhbHNlIl0sImh0dHBzOi8vZXUucGx1Z25jaGFyZ2UtdGVzdC5odWJqZWN0LmNvbS9jbGllbnRfYXBwIjoiSHViamVjdCBBZG1pbiIsImlzcyI6Imh0dHBzOi8vYXV0aC5ldS5wbHVnbmNoYXJnZS5odWJqZWN0LmNvbS8iLCJzdWIiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacUBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tIiwiaWF0IjoxNzI1MzA0NTc3LCJleHAiOjE3MjUzOTA5NzcsInNjb3BlIjoicmNwc2VydmljZSBwY3BzZXJ2aWNlIGNjcHNlcnZpY2UgY3BzZXJ2aWNlIGF1ZGktb2VtLWJhY2tlbmQgcGtpZ2F0ZXdheSB3ZWJob29rcyByYXNlcnZpY2Ugd2ViaG9va3MyIHBjcHNlcnZpY2UtYXNpYSByY3BzZXJ2aWNlLWFzaWEgY2Nwc2VydmljZS1hc2lhIGVjc2VydmljZSBjZHNlcnZpY2Ugb2NzcC1jaGVja2VyIG5leHVzLWFkYXB0ZXIiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJhenAiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacSIsInBlcm1pc3Npb25zIjpbInJjcHNlcnZpY2UiLCJwY3BzZXJ2aWNlIiwiY2Nwc2VydmljZSIsImNwc2VydmljZSIsImF1ZGktb2VtLWJhY2tlbmQiLCJwa2lnYXRld2F5Iiwid2ViaG9va3MiLCJyYXNlcnZpY2UiLCJ3ZWJob29rczIiLCJwY3BzZXJ2aWNlLWFzaWEiLCJyY3BzZXJ2aWNlLWFzaWEiLCJjY3BzZXJ2aWNlLWFzaWEiLCJlY3NlcnZpY2UiLCJjZHNlcnZpY2UiLCJvY3NwLWNoZWNrZXIiLCJuZXh1cy1hZGFwdGVyIl19.J2rfA5tE-O-ObtMTEtVI6l1nrhqcp2knUiRJgXv1dm_0PYRwGj2MywmGf5XMvHaAs8Vd9rhBeb0mDJTeKCPhX3DrG-EGrIETu7JhbitMZZezSKMhdhnkfTPREgAYz-PLp6n9hO6iSbHd15x-ArQAh_b3dgBFQeir1Ya5r4XBRMMGfc_kwPSf9IYQvmQr4xbycKXFFvAUd57f7d9X9wSc0QCsm-eOrJV-JYu3UYfGE0H-sAAwoD7X-qrqt7d_xs9d3yNYc5qltfaDFmfOWU4hrqs8XMtVGa37yshIdXkPkyGT3OkbvHNHJHcJ5queHucw32M7y4oWhe6k4kl4Y4sc6g
+1 &gt; Host: eu.plugncharge-test.hubject.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.24)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:16:22.331 response time in milliseconds: 948
+1 &lt; 200
+1 &lt; content-transfer-encoding: base64
+1 &lt; content-type: application/pkcs7-mime; smime-type=certs-only
+1 &lt; date: Mon, 02 Sep 2024 19:16:21 GMT
+1 &lt; content-length: 2364
+1 &lt; cache-control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; pragma: no-cache
+1 &lt; expires: 0
+1 &lt; x-content-type-options: nosniff
+1 &lt; strict-transport-security: max-age=31536000 ; includeSubDomains
+1 &lt; x-frame-options: DENY
+1 &lt; x-xss-protection: 0
+1 &lt; referrer-policy: no-referrer
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/.well-known/oem/cacerts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">980</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13.0.call.0.17">19:16:22.342 request:
+1 &gt; GET https://eu.plugncharge-test.hubject.com/.well-known/oem/cacerts
+1 &gt; Cookie: did_compat=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4; __cf_bm=7DdLiphjIqAY2nZpHeaqb9byRgm2lNmpdWaVn.Ook8U-1725304577-1.0.1.1-h3Ip7LVrlJrZ0lSDw.1tE34GAvFd9_zRlcdvLvHaWNbGcsfeuNjGzKXQopc2_u5V; did=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkJ3eEV0TkFGUnpSM3JlNVF2elM2QyJ9.eyJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcm9sZSI6WyJPRU0iLCJBRE1JTiJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcGNpZCI6WyJIVUIiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2VtYWlkIjpbIkRFSFVCIiwiRU1QNzciLCJFTVA5OSIsIkhVQkFUIiwiREVJQ0UiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2NsaWVudF9uYW1lIjpbIkh1YmplY3QgR21iSCJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcmFfYWN0aXZlIjpbImZhbHNlIl0sImh0dHBzOi8vZXUucGx1Z25jaGFyZ2UtdGVzdC5odWJqZWN0LmNvbS9jbGllbnRfYXBwIjoiSHViamVjdCBBZG1pbiIsImlzcyI6Imh0dHBzOi8vYXV0aC5ldS5wbHVnbmNoYXJnZS5odWJqZWN0LmNvbS8iLCJzdWIiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacUBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tIiwiaWF0IjoxNzI1MzA0NTc3LCJleHAiOjE3MjUzOTA5NzcsInNjb3BlIjoicmNwc2VydmljZSBwY3BzZXJ2aWNlIGNjcHNlcnZpY2UgY3BzZXJ2aWNlIGF1ZGktb2VtLWJhY2tlbmQgcGtpZ2F0ZXdheSB3ZWJob29rcyByYXNlcnZpY2Ugd2ViaG9va3MyIHBjcHNlcnZpY2UtYXNpYSByY3BzZXJ2aWNlLWFzaWEgY2Nwc2VydmljZS1hc2lhIGVjc2VydmljZSBjZHNlcnZpY2Ugb2NzcC1jaGVja2VyIG5leHVzLWFkYXB0ZXIiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJhenAiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacSIsInBlcm1pc3Npb25zIjpbInJjcHNlcnZpY2UiLCJwY3BzZXJ2aWNlIiwiY2Nwc2VydmljZSIsImNwc2VydmljZSIsImF1ZGktb2VtLWJhY2tlbmQiLCJwa2lnYXRld2F5Iiwid2ViaG9va3MiLCJyYXNlcnZpY2UiLCJ3ZWJob29rczIiLCJwY3BzZXJ2aWNlLWFzaWEiLCJyY3BzZXJ2aWNlLWFzaWEiLCJjY3BzZXJ2aWNlLWFzaWEiLCJlY3NlcnZpY2UiLCJjZHNlcnZpY2UiLCJvY3NwLWNoZWNrZXIiLCJuZXh1cy1hZGFwdGVyIl19.J2rfA5tE-O-ObtMTEtVI6l1nrhqcp2knUiRJgXv1dm_0PYRwGj2MywmGf5XMvHaAs8Vd9rhBeb0mDJTeKCPhX3DrG-EGrIETu7JhbitMZZezSKMhdhnkfTPREgAYz-PLp6n9hO6iSbHd15x-ArQAh_b3dgBFQeir1Ya5r4XBRMMGfc_kwPSf9IYQvmQr4xbycKXFFvAUd57f7d9X9wSc0QCsm-eOrJV-JYu3UYfGE0H-sAAwoD7X-qrqt7d_xs9d3yNYc5qltfaDFmfOWU4hrqs8XMtVGa37yshIdXkPkyGT3OkbvHNHJHcJ5queHucw32M7y4oWhe6k4kl4Y4sc6g
+1 &gt; Host: eu.plugncharge-test.hubject.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.24)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:16:23.319 response time in milliseconds: 976
+1 &lt; 200
+1 &lt; content-transfer-encoding: base64
+1 &lt; content-type: application/pkcs7-mime; smime-type=certs-only
+1 &lt; date: Mon, 02 Sep 2024 19:16:23 GMT
+1 &lt; content-length: 2368
+1 &lt; cache-control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; pragma: no-cache
+1 &lt; expires: 0
+1 &lt; x-content-type-options: nosniff
+1 &lt; strict-transport-security: max-age=31536000 ; includeSubDomains
+1 &lt; x-frame-options: DENY
+1 &lt; x-xss-protection: 0
+1 &lt; referrer-policy: no-referrer
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.18">
+      <div class="step-ref passed">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">happyPath-2</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:16]</span>
+                <span class="scenario-name">rcp</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>657</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>callonce read(&#39;../commons/get_access_token.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">19:16:23.328 karate.env system property was: dev 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Scenario: GetAllRootCertificates</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/v1/root/rootCerts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">323</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">19:16:23.339 request:
+1 &gt; GET https://eu.plugncharge-test.hubject.com/v1/root/rootCerts
+1 &gt; Cookie: did_compat=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4; __cf_bm=7DdLiphjIqAY2nZpHeaqb9byRgm2lNmpdWaVn.Ook8U-1725304577-1.0.1.1-h3Ip7LVrlJrZ0lSDw.1tE34GAvFd9_zRlcdvLvHaWNbGcsfeuNjGzKXQopc2_u5V; did=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkJ3eEV0TkFGUnpSM3JlNVF2elM2QyJ9.eyJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcm9sZSI6WyJPRU0iLCJBRE1JTiJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcGNpZCI6WyJIVUIiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2VtYWlkIjpbIkRFSFVCIiwiRU1QNzciLCJFTVA5OSIsIkhVQkFUIiwiREVJQ0UiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2NsaWVudF9uYW1lIjpbIkh1YmplY3QgR21iSCJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcmFfYWN0aXZlIjpbImZhbHNlIl0sImh0dHBzOi8vZXUucGx1Z25jaGFyZ2UtdGVzdC5odWJqZWN0LmNvbS9jbGllbnRfYXBwIjoiSHViamVjdCBBZG1pbiIsImlzcyI6Imh0dHBzOi8vYXV0aC5ldS5wbHVnbmNoYXJnZS5odWJqZWN0LmNvbS8iLCJzdWIiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacUBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tIiwiaWF0IjoxNzI1MzA0NTc3LCJleHAiOjE3MjUzOTA5NzcsInNjb3BlIjoicmNwc2VydmljZSBwY3BzZXJ2aWNlIGNjcHNlcnZpY2UgY3BzZXJ2aWNlIGF1ZGktb2VtLWJhY2tlbmQgcGtpZ2F0ZXdheSB3ZWJob29rcyByYXNlcnZpY2Ugd2ViaG9va3MyIHBjcHNlcnZpY2UtYXNpYSByY3BzZXJ2aWNlLWFzaWEgY2Nwc2VydmljZS1hc2lhIGVjc2VydmljZSBjZHNlcnZpY2Ugb2NzcC1jaGVja2VyIG5leHVzLWFkYXB0ZXIiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJhenAiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacSIsInBlcm1pc3Npb25zIjpbInJjcHNlcnZpY2UiLCJwY3BzZXJ2aWNlIiwiY2Nwc2VydmljZSIsImNwc2VydmljZSIsImF1ZGktb2VtLWJhY2tlbmQiLCJwa2lnYXRld2F5Iiwid2ViaG9va3MiLCJyYXNlcnZpY2UiLCJ3ZWJob29rczIiLCJwY3BzZXJ2aWNlLWFzaWEiLCJyY3BzZXJ2aWNlLWFzaWEiLCJjY3BzZXJ2aWNlLWFzaWEiLCJlY3NlcnZpY2UiLCJjZHNlcnZpY2UiLCJvY3NwLWNoZWNrZXIiLCJuZXh1cy1hZGFwdGVyIl19.J2rfA5tE-O-ObtMTEtVI6l1nrhqcp2knUiRJgXv1dm_0PYRwGj2MywmGf5XMvHaAs8Vd9rhBeb0mDJTeKCPhX3DrG-EGrIETu7JhbitMZZezSKMhdhnkfTPREgAYz-PLp6n9hO6iSbHd15x-ArQAh_b3dgBFQeir1Ya5r4XBRMMGfc_kwPSf9IYQvmQr4xbycKXFFvAUd57f7d9X9wSc0QCsm-eOrJV-JYu3UYfGE0H-sAAwoD7X-qrqt7d_xs9d3yNYc5qltfaDFmfOWU4hrqs8XMtVGa37yshIdXkPkyGT3OkbvHNHJHcJ5queHucw32M7y4oWhe6k4kl4Y4sc6g
+1 &gt; Host: eu.plugncharge-test.hubject.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.24)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:16:23.657 response time in milliseconds: 316
+1 &lt; 200
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 0
+1 &lt; cache-control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; pragma: no-cache
+1 &lt; expires: 0
+1 &lt; strict-transport-security: max-age=31536000 ; includeSubDomains
+1 &lt; x-frame-options: DENY
+1 &lt; content-type: application/json
+1 &lt; date: Mon, 02 Sep 2024 19:16:23 GMT
+1 &lt; transfer-encoding: chunked
+{&quot;RootCertificateCollection&quot;:{&quot;rootCertificates&quot;:[{&quot;caCertificate&quot;:&quot;MIICUzCCAfmgAwIBAgIQaasA0lm730LOgFKa0wzl7TAKBggqhkjOPQQDAjBVMQswCQYDVQQGEwJERTEVMBMGA1UEChMMSHViamVjdCBHbWJIMRMwEQYKCZImiZPyLGQBGRYDVjJHMRowGAYDVQQDExFWMkcgUm9vdCBDQSBRQSBHMTAgFw0xOTA0MjYwODM3MTVaGA8yMDU5MDQyNjA4MzcxNVowVTELMAkGA1UEBhMCREUxFTATBgNVBAoTDEh1YmplY3QgR21iSDETMBEGCgmSJomT8ixkARkWA1YyRzEaMBgGA1UEAxMRVjJHIFJvb3QgQ0EgUUEgRzEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAShT8kSNcC+74TND82On2Y2TOf8mYfxw73lKZ7t9cmEXHpMdAgsWBQ4LI+pOMhe6NOHzJbzP38kQTg4zLfw3kU0o4GoMIGlMBMGA1UdJQQMMAoGCCsGAQUFBwMJMA8GA1UdEwEB/wQFMAMBAf8wEQYDVR0OBAoECEtF/4Il/BCWMEUGA1UdIAQ+MDwwOgYMKwYBBAGCxDUBAgEAMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8vd3d3Lmh1YmplY3QuY29tL3BraS8wEwYDVR0jBAwwCoAIS0X/giX8EJYwDgYDVR0PAQH/BAQDAgEGMAoGCCqGSM49BAMCA0gAMEUCIQCq3Qx2BLYVFb7Lt5XXpSlUViYv4cIUOQE1Ce9o2Jyy1QIgZRmVzMVjHZA+toiM000PCUrLppqbLpcRN4MP8kE0OhU=&quot;,&quot;rootCertificateId&quot;:&quot;dfde14be-5a0c-4471-b47f-7c7a0a88da9c&quot;,&quot;distinguishedName&quot;:&quot;CN=V2G Root CA QA G1, DC=V2G, O=Hubject GmbH, C=DE&quot;,&quot;commonName&quot;:&quot;V2G Root CA QA G1&quot;,&quot;rootAuthorityKeyIdentifier&quot;:&quot;S0X/giX8EJY=&quot;,&quot;rootAuthorityKeyIdentifierHex&quot;:&quot;4b45ff8225fc1096&quot;,&quot;rootIssuerSerialNumber&quot;:&quot;69ab00d259bbdf42ce80529ad30ce5ed&quot;,&quot;validFrom&quot;:&quot;2019-04-26T08:37:15Z&quot;,&quot;validTo&quot;:&quot;2059-04-26T08:37:15Z&quot;,&quot;organizationName&quot;:&quot;Hubject GmbH&quot;,&quot;rootType&quot;:&quot;V2G&quot;,&quot;fingerprint&quot;:&quot;4e05b8922d43923cdf20b202cdd0d849770b50038c39f104f506d7f1030ff809&quot;,&quot;fingerprintSha1&quot;:&quot;b491ddd08fafe72d9f6f9bafc68eb04da84cc09a&quot;,&quot;xsdMsgDefNamespace&quot;:&quot;urn:iso:15118:2:2013:MsgDef&quot;,&quot;signatureAlgorithm&quot;:&quot;secp256r1&quot;},{&quot;caCertificate&quot;:&quot;MIIByTCCAW6gAwIBAgICMDkwCgYIKoZIzj0EAwIwSzERMA8GA1UEAwwIT0VNIFJPT1QxFDASBgNVBAoMC0tBUkFURSBURVNUMQswCQYDVQQGEwJERTETMBEGCgmSJomT8ixkARkWA09FTTAeFw0yNDA0MjQxMjE5NTVaFw0zNDA0MjIxMjE5NTVaMEsxETAPBgNVBAMMCE9FTSBST09UMRQwEgYDVQQKDAtLQVJBVEUgVEVTVDELMAkGA1UEBhMCREUxEzARBgoJkiaJk/IsZAEZFgNPRU0wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATBjkWRuCpr52WQCcSvJLTqWHqXOwUBHKN3doEQlHYl4KWfOIyJNgAR3UEL0vWgbOa6nCbN6DoZJs41BPZRcmV2o0IwQDAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBBjAdBgNVHQ4EFgQU0kitlFge+7YaMZvCz7mc8UrpHbwwCgYIKoZIzj0EAwIDSQAwRgIhAJEtujeCiPk23BmlANuSyB0ip10IDfUFlhtH0+rE+/dxAiEApka0unmWWvfD5xpw1gdAAtw8N2A/ixSpq0ZuEf3/x2k=&quot;,&quot;rootCertificateId&quot;:&quot;76a80594-14e7-44ca-8112-941ba837bb6a&quot;,&quot;distinguishedName&quot;:&quot;DC=OEM, C=DE, O=KARATE TEST, CN=OEM ROOT&quot;,&quot;commonName&quot;:&quot;OEM ROOT&quot;,&quot;rootAuthorityKeyIdentifier&quot;:&quot;0kitlFge+7YaMZvCz7mc8UrpHbw=&quot;,&quot;rootAuthorityKeyIdentifierHex&quot;:&quot;d248ad94581efbb61a319bc2cfb99cf14ae91dbc&quot;,&quot;rootIssuerSerialNumber&quot;:&quot;3039&quot;,&quot;validFrom&quot;:&quot;2024-04-24T12:19:55Z&quot;,&quot;validTo&quot;:&quot;2034-04-22T12:19:55Z&quot;,&quot;organizationName&quot;:&quot;KARATE TEST&quot;,&quot;rootType&quot;:&quot;OEM&quot;,&quot;fingerprint&quot;:&quot;4ee5c5043ed973bec3f31383cdfe850c9ba61d57330e3282bd93ff69148febb2&quot;,&quot;fingerprintSha1&quot;:&quot;9e623da096fdb9bf098df3480e24b01857b258df&quot;,&quot;xsdMsgDefNamespace&quot;:&quot;urn:iso:15118:2:2013:MsgDef&quot;,&quot;signatureAlgorithm&quot;:&quot;secp256r1&quot;},{&quot;caCertificate&quot;:&quot;MIICDzCCAbSgAwIBAgIQSDGzHuLS5gHHZ6BCuB+B/zAKBggqhkjOPQQDAjBUMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMSHViamVjdCBJbmMuMRMwEQYKCZImiZPyLGQBGRYDVjJHMRkwFwYDVQQDExBVUyBWMkcgUm9vdENBIEcyMCAXDTIwMDIyODIyNTk1OVoYDzIwNjAwMjI4MjI1OTU5WjBUMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMSHViamVjdCBJbmMuMRMwEQYKCZImiZPyLGQBGRYDVjJHMRkwFwYDVQQDExBVUyBWMkcgUm9vdENBIEcyMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEhr95mLAA84GxG3qsBDpEXLDbBtpcyYlA7JyUbCpGYh2cYz16WWrwGAXcC3+CNIebEcRseXMQ+GjTSivBu73eLaNmMGQwDwYDVR0TAQH/BAUwAwEB/zARBgNVHQ4ECgQIS8U/Ir76DTcwGQYDVR0gBBIwEDAOBgwrBgEEAYOuDQECAQIwEwYDVR0jBAwwCoAIS8U/Ir76DTcwDgYDVR0PAQH/BAQDAgEGMAoGCCqGSM49BAMCA0kAMEYCIQDT6q2avPv0YWYZH7VnRXKoRvv+7hIwldYyGfjkpYVWigIhAK74SxvmLH+OPNbDGUH8qOf+b0cWO2QYRBjqzbtE7/Gh&quot;,&quot;rootCertificateId&quot;:&quot;e29d7880-23be-4c4c-a00e-991d627b20cc&quot;,&quot;distinguishedName&quot;:&quot;CN=US V2G RootCA G2, DC=V2G, O=Hubject Inc., C=US&quot;,&quot;commonName&quot;:&quot;US V2G RootCA G2&quot;,&quot;rootAuthorityKeyIdentifier&quot;:&quot;S8U/Ir76DTc=&quot;,&quot;rootAuthorityKeyIdentifierHex&quot;:&quot;4bc53f22befa0d37&quot;,&quot;rootIssuerSerialNumber&quot;:&quot;4831b31ee2d2e601c767a042b81f81ff&quot;,&quot;validFrom&quot;:&quot;2020-02-28T22:59:59Z&quot;,&quot;validTo&quot;:&quot;2060-02-28T22:59:59Z&quot;,&quot;organizationName&quot;:&quot;Hubject Inc.&quot;,&quot;rootType&quot;:&quot;OEM&quot;,&quot;fingerprint&quot;:&quot;35afbdc3079e55fdc25524ddf6bb04bcb9287ef018815840e681bd01eecf86a1&quot;,&quot;fingerprintSha1&quot;:&quot;30aaaab25b1cc8a09a7b32652c33cc5a973c13f3&quot;,&quot;xsdMsgDefNamespace&quot;:&quot;urn:iso:15118:2:2013:MsgDef&quot;,&quot;signatureAlgorithm&quot;:&quot;secp256r1&quot;},{&quot;caCertificate&quot;:&quot;MIICVzCCAbmgAwIBAgIQefPNARc//vhJcNAtGR8euTAKBggqhkjOPQQDBDBOMQswCQYDVQQGEwJERTEVMBMGA1UEChMMSHViamVjdCBHbWJIMSgwJgYDVQQDEx9RQSBIdWJqZWN0IFYyRy0yMCBSb290IENBIEVDIEcxMB4XDTIyMDYwMjIxNTk1OVoXDTQ3MDYwMjIxNTk1OVowTjELMAkGA1UEBhMCREUxFTATBgNVBAoTDEh1YmplY3QgR21iSDEoMCYGA1UEAxMfUUEgSHViamVjdCBWMkctMjAgUm9vdCBDQSBFQyBHMTCBmzAQBgcqhkjOPQIBBgUrgQQAIwOBhgAEAEibu7j/Wq43sZIVCVD0ijceSkIu3wVc1obXn0d/JV+NE0ls2gvjdvu/22SuDXI6ZtLEy0NGhGA8XMVQDE/PAya/AZHn6EVsav0f+pJBi5gpZo6Z+Jw4DzcIAvLDiCy6NjWHSclpGiVMRgYchpHwMBvbOJD0Z6JQaRwQi5WAGugivAY3ozYwNDAPBgNVHRMBAf8EBTADAQH/MBEGA1UdDgQKBAhF8KTt4th+ITAOBgNVHQ8BAf8EBAMCAQYwCgYIKoZIzj0EAwQDgYsAMIGHAkFjQiFMDvOD0qLdKrf+QCVBrKgtDFuGiuBHUgIo79kniWoRS08JZRmyhEy3ut4e62MnGLKCSp6CJuVWJWdN9AU0bAJCAI++i7axjqP6i1FCxFQMtD3AGHaZshoXi37Sg0S7MtMc9gSWTyG+ILTURjdXI1VQZragxO2RtKeH/Lz1pOGYbftU&quot;,&quot;rootCertificateId&quot;:&quot;787fb480-f0b4-4a0d-96a5-2edf950214ff&quot;,&quot;distinguishedName&quot;:&quot;CN=QA Hubject V2G-20 Root CA EC G1, O=Hubject GmbH, C=DE&quot;,&quot;commonName&quot;:&quot;QA Hubject V2G-20 Root CA EC G1&quot;,&quot;rootAuthorityKeyIdentifier&quot;:&quot;RfCk7eLYfiE=&quot;,&quot;rootAuthorityKeyIdentifierHex&quot;:&quot;45f0a4ede2d87e21&quot;,&quot;rootIssuerSerialNumber&quot;:&quot;79f3cd01173ffef84970d02d191f1eb9&quot;,&quot;validFrom&quot;:&quot;2022-06-02T21:59:59Z&quot;,&quot;validTo&quot;:&quot;2047-06-02T21:59:59Z&quot;,&quot;organizationName&quot;:&quot;Hubject GmbH&quot;,&quot;rootType&quot;:&quot;V2G&quot;,&quot;fingerprint&quot;:&quot;50f9630d52d8b975128f644befec25fdfb4bcb96c2e88bf2adeb1760a6f714e0&quot;,&quot;fingerprintSha1&quot;:&quot;b5bd25713403bd1d4cd59e44e4566a8e9a79ab1c&quot;,&quot;xsdMsgDefNamespace&quot;:&quot;urn:iso:15118:20:2022:MsgDef&quot;,&quot;signatureAlgorithm&quot;:&quot;secp521r1&quot;},{&quot;caCertificate&quot;:&quot;MIIBnzCCAUagAwIBAgIBATAKBggqhkjOPQQDAjA3MQswCQYDVQQGEwJERTETMBEGA1UECgwKRGFpbWxlciBBRzETMBEGA1UEAwwKUG5DX3Jvb3RDQTAgFw0yMjExMDgwOTQ0MTNaGA8yMDYyMTEwODA5NDQxM1owNzELMAkGA1UEBhMCREUxEzARBgNVBAoMCkRhaW1sZXIgQUcxEzARBgNVBAMMClBuQ19yb290Q0EwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAQycT5RiSqNdUH56fTBVzOzrI2wVC8Mv4XJ4sgn5rMdjJ4RxJVR/Xp/SCYGgYb81T0G1nvAMBRKfkKZlfIbyr/6o0EwPzAfBgNVHSMEGDAWgBThRpngc3FY5uwGYtZaWhpX+A/uOTAPBgNVHRMBAf8EBTADAQH/MAsGA1UdDwQEAwIBhjAKBggqhkjOPQQDAgNHADBEAiADAn6l+19u4fk5kDtXfavAFVfC/HK54PqW2bVthReVJQIgC/XxgH+/B8Oxm2sP+wDFScB0/0xtszA30+TVabF7PKc=&quot;,&quot;rootCertificateId&quot;:&quot;b9b45123-f804-4e75-a2cc-12da4dbd9671&quot;,&quot;distinguishedName&quot;:&quot;CN=PnC_rootCA, O=Daimler AG, C=DE&quot;,&quot;commonName&quot;:&quot;PnC_rootCA&quot;,&quot;rootIssuerSerialNumber&quot;:&quot;1&quot;,&quot;validFrom&quot;:&quot;2022-11-08T09:44:13Z&quot;,&quot;validTo&quot;:&quot;2062-11-08T09:44:13Z&quot;,&quot;organizationName&quot;:&quot;Daimler AG&quot;,&quot;rootType&quot;:&quot;V2G&quot;,&quot;fingerprint&quot;:&quot;0bfe13e6abaf23e2b3d5efd98b0caab3ee5d2cccf552fcf5a1de34d424c96990&quot;,&quot;fingerprintSha1&quot;:&quot;749bbc23f6a616d21c9d295550e8058768f8c4c0&quot;,&quot;xsdMsgDefNamespace&quot;:&quot;urn:iso:15118:2:2013:MsgDef&quot;,&quot;signatureAlgorithm&quot;:&quot;secp256r1&quot;},{&quot;caCertificate&quot;:&quot;MIIByzCCAXCgAwIBAgICMDkwCgYIKoZIzj0EAwIwTDESMBAGA1UEAwwJVjJHUm9vdENBMRQwEgYDVQQKDAtLQVJBVEUgVEVTVDELMAkGA1UEBhMCREUxEzARBgoJkiaJk/IsZAEZFgNWMkcwHhcNMjQwNDI0MTIxOTU1WhcNMzQwNDIyMTIxOTU1WjBMMRIwEAYDVQQDDAlWMkdSb290Q0ExFDASBgNVBAoMC0tBUkFURSBURVNUMQswCQYDVQQGEwJERTETMBEGCgmSJomT8ixkARkWA1YyRzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABA5brtUPEuui4nAV/HyTtpa7xCT6IwnvjJGAgQlon5FH5UQ+f/HBKYRam6ApGjMr0Z6J2cZWXfmz6cflq3k8F+OjQjBAMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMB0GA1UdDgQWBBQZrF1+usJvW0N99AKmhTogPczhDDAKBggqhkjOPQQDAgNJADBGAiEA0ak/yUQG7k17yx+sYyPHVORAKi3VAzCDAYB0w+eniBMCIQD5LwSun1WXtGzxUwJkj1xmdjzYE5zwHS8rb6nd/ZlrLw==&quot;,&quot;rootCertificateId&quot;:&quot;5ca4a9fc-6ee8-4dd7-a20c-a33cb72c95ab&quot;,&quot;distinguishedName&quot;:&quot;DC=V2G, C=DE, O=KARATE TEST, CN=V2GRootCA&quot;,&quot;commonName&quot;:&quot;V2GRootCA&quot;,&quot;rootAuthorityKeyIdentifier&quot;:&quot;GaxdfrrCb1tDffQCpoU6ID3M4Qw=&quot;,&quot;rootAuthorityKeyIdentifierHex&quot;:&quot;19ac5d7ebac26f5b437df402a6853a203dcce10c&quot;,&quot;rootIssuerSerialNumber&quot;:&quot;3039&quot;,&quot;validFrom&quot;:&quot;2024-04-24T12:19:55Z&quot;,&quot;validTo&quot;:&quot;2034-04-22T12:19:55Z&quot;,&quot;organizationName&quot;:&quot;KARATE TEST&quot;,&quot;rootType&quot;:&quot;V2G&quot;,&quot;fingerprint&quot;:&quot;0aa5302a1f84c4874e286152e565b8c81878ae3d7b8c75742b2455c32c8e5bb5&quot;,&quot;fingerprintSha1&quot;:&quot;8ab53a1d3a2fbbbe343bf23c8b63fcd71221fdf3&quot;,&quot;xsdMsgDefNamespace&quot;:&quot;urn:iso:15118:2:2013:MsgDef&quot;,&quot;signatureAlgorithm&quot;:&quot;secp256r1&quot;}]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Scenario:  GetV2gRootCertificate</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/v1/root/rootCerts/&#39; , V2gRootCertificateId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">317</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">19:16:23.673 request:
+2 &gt; GET https://eu.plugncharge-test.hubject.com/v1/root/rootCerts/dfde14be-5a0c-4471-b47f-7c7a0a88da9c
+2 &gt; Cookie: did_compat=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4; __cf_bm=7DdLiphjIqAY2nZpHeaqb9byRgm2lNmpdWaVn.Ook8U-1725304577-1.0.1.1-h3Ip7LVrlJrZ0lSDw.1tE34GAvFd9_zRlcdvLvHaWNbGcsfeuNjGzKXQopc2_u5V; did=s%3Av0%3Ad1c1c7ba-0edd-4189-a3e8-a24e4014aa06.V7rYpGWUMZUlIXkkPNNbmZmrqEagSbBuDav3TlofMb4
+2 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkJ3eEV0TkFGUnpSM3JlNVF2elM2QyJ9.eyJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcm9sZSI6WyJPRU0iLCJBRE1JTiJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcGNpZCI6WyJIVUIiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2VtYWlkIjpbIkRFSFVCIiwiRU1QNzciLCJFTVA5OSIsIkhVQkFUIiwiREVJQ0UiXSwiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tL2NsaWVudF9uYW1lIjpbIkh1YmplY3QgR21iSCJdLCJodHRwczovL2V1LnBsdWduY2hhcmdlLXRlc3QuaHViamVjdC5jb20vcmFfYWN0aXZlIjpbImZhbHNlIl0sImh0dHBzOi8vZXUucGx1Z25jaGFyZ2UtdGVzdC5odWJqZWN0LmNvbS9jbGllbnRfYXBwIjoiSHViamVjdCBBZG1pbiIsImlzcyI6Imh0dHBzOi8vYXV0aC5ldS5wbHVnbmNoYXJnZS5odWJqZWN0LmNvbS8iLCJzdWIiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacUBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9ldS5wbHVnbmNoYXJnZS10ZXN0Lmh1YmplY3QuY29tIiwiaWF0IjoxNzI1MzA0NTc3LCJleHAiOjE3MjUzOTA5NzcsInNjb3BlIjoicmNwc2VydmljZSBwY3BzZXJ2aWNlIGNjcHNlcnZpY2UgY3BzZXJ2aWNlIGF1ZGktb2VtLWJhY2tlbmQgcGtpZ2F0ZXdheSB3ZWJob29rcyByYXNlcnZpY2Ugd2ViaG9va3MyIHBjcHNlcnZpY2UtYXNpYSByY3BzZXJ2aWNlLWFzaWEgY2Nwc2VydmljZS1hc2lhIGVjc2VydmljZSBjZHNlcnZpY2Ugb2NzcC1jaGVja2VyIG5leHVzLWFkYXB0ZXIiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMiLCJhenAiOiJrT2pYVEMzOGdPMktVMmhmOWVXU1VSbDBJVGNGZkpacSIsInBlcm1pc3Npb25zIjpbInJjcHNlcnZpY2UiLCJwY3BzZXJ2aWNlIiwiY2Nwc2VydmljZSIsImNwc2VydmljZSIsImF1ZGktb2VtLWJhY2tlbmQiLCJwa2lnYXRld2F5Iiwid2ViaG9va3MiLCJyYXNlcnZpY2UiLCJ3ZWJob29rczIiLCJwY3BzZXJ2aWNlLWFzaWEiLCJyY3BzZXJ2aWNlLWFzaWEiLCJjY3BzZXJ2aWNlLWFzaWEiLCJlY3NlcnZpY2UiLCJjZHNlcnZpY2UiLCJvY3NwLWNoZWNrZXIiLCJuZXh1cy1hZGFwdGVyIl19.J2rfA5tE-O-ObtMTEtVI6l1nrhqcp2knUiRJgXv1dm_0PYRwGj2MywmGf5XMvHaAs8Vd9rhBeb0mDJTeKCPhX3DrG-EGrIETu7JhbitMZZezSKMhdhnkfTPREgAYz-PLp6n9hO6iSbHd15x-ArQAh_b3dgBFQeir1Ya5r4XBRMMGfc_kwPSf9IYQvmQr4xbycKXFFvAUd57f7d9X9wSc0QCsm-eOrJV-JYu3UYfGE0H-sAAwoD7X-qrqt7d_xs9d3yNYc5qltfaDFmfOWU4hrqs8XMtVGa37yshIdXkPkyGT3OkbvHNHJHcJ5queHucw32M7y4oWhe6k4kl4Y4sc6g
+2 &gt; Host: eu.plugncharge-test.hubject.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.24)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+19:16:23.986 response time in milliseconds: 312
+2 &lt; 200
+2 &lt; x-content-type-options: nosniff
+2 &lt; x-xss-protection: 0
+2 &lt; cache-control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; pragma: no-cache
+2 &lt; expires: 0
+2 &lt; strict-transport-security: max-age=31536000 ; includeSubDomains
+2 &lt; x-frame-options: DENY
+2 &lt; content-type: application/json
+2 &lt; date: Mon, 02 Sep 2024 19:16:23 GMT
+2 &lt; transfer-encoding: chunked
+{&quot;RootResponse&quot;:{&quot;caCertificate&quot;:&quot;MIICUzCCAfmgAwIBAgIQaasA0lm730LOgFKa0wzl7TAKBggqhkjOPQQDAjBVMQswCQYDVQQGEwJERTEVMBMGA1UEChMMSHViamVjdCBHbWJIMRMwEQYKCZImiZPyLGQBGRYDVjJHMRowGAYDVQQDExFWMkcgUm9vdCBDQSBRQSBHMTAgFw0xOTA0MjYwODM3MTVaGA8yMDU5MDQyNjA4MzcxNVowVTELMAkGA1UEBhMCREUxFTATBgNVBAoTDEh1YmplY3QgR21iSDETMBEGCgmSJomT8ixkARkWA1YyRzEaMBgGA1UEAxMRVjJHIFJvb3QgQ0EgUUEgRzEwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAShT8kSNcC+74TND82On2Y2TOf8mYfxw73lKZ7t9cmEXHpMdAgsWBQ4LI+pOMhe6NOHzJbzP38kQTg4zLfw3kU0o4GoMIGlMBMGA1UdJQQMMAoGCCsGAQUFBwMJMA8GA1UdEwEB/wQFMAMBAf8wEQYDVR0OBAoECEtF/4Il/BCWMEUGA1UdIAQ+MDwwOgYMKwYBBAGCxDUBAgEAMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8vd3d3Lmh1YmplY3QuY29tL3BraS8wEwYDVR0jBAwwCoAIS0X/giX8EJYwDgYDVR0PAQH/BAQDAgEGMAoGCCqGSM49BAMCA0gAMEUCIQCq3Qx2BLYVFb7Lt5XXpSlUViYv4cIUOQE1Ce9o2Jyy1QIgZRmVzMVjHZA+toiM000PCUrLppqbLpcRN4MP8kE0OhU=&quot;,&quot;rootCertificateId&quot;:&quot;dfde14be-5a0c-4471-b47f-7c7a0a88da9c&quot;,&quot;distinguishedName&quot;:&quot;CN=V2G Root CA QA G1, DC=V2G, O=Hubject GmbH, C=DE&quot;,&quot;commonName&quot;:&quot;V2G Root CA QA G1&quot;,&quot;rootAuthorityKeyIdentifier&quot;:&quot;S0X/giX8EJY=&quot;,&quot;rootAuthorityKeyIdentifierHex&quot;:&quot;4b45ff8225fc1096&quot;,&quot;rootIssuerSerialNumber&quot;:&quot;69ab00d259bbdf42ce80529ad30ce5ed&quot;,&quot;validFrom&quot;:&quot;2019-04-26T08:37:15Z&quot;,&quot;validTo&quot;:&quot;2059-04-26T08:37:15Z&quot;,&quot;organizationName&quot;:&quot;Hubject GmbH&quot;,&quot;rootType&quot;:&quot;V2G&quot;,&quot;fingerprint&quot;:&quot;4e05b8922d43923cdf20b202cdd0d849770b50038c39f104f506d7f1030ff809&quot;,&quot;fingerprintSha1&quot;:&quot;b491ddd08fafe72d9f6f9bafc68eb04da84cc09a&quot;,&quot;xsdMsgDefNamespace&quot;:&quot;urn:iso:15118:2:2013:MsgDef&quot;,&quot;signatureAlgorithm&quot;:&quot;secp256r1&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
