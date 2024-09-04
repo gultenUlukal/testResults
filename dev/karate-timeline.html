@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"pnc\/happyPath\/happyPath-2[1:7]","start":1725492036399,"end":1725492040440,"title":"pnc\/happyPath\/happyPath-2[1:7] 23:20:36.399-23:20:40.440 PKI Gateway Simple Enroll"},{"id":2,"group":1,"content":"pnc\/happyPath\/happyPath-2[2:10]","start":1725492040451,"end":1725492043451,"title":"pnc\/happyPath\/happyPath-2[2:10] 23:20:40.451-23:20:43.451 PKI Gateway CaCerts"},{"id":3,"group":1,"content":"pnc\/happyPath\/happyPath-2[3:13]","start":1725492043461,"end":1725492043885,"title":"pnc\/happyPath\/happyPath-2[3:13] 23:20:43.461-23:20:43.885 GetAllRootCertificates"},{"id":4,"group":1,"content":"pnc\/happyPath\/happyPath-2[4:18]","start":1725492043895,"end":1725492044210,"title":"pnc\/happyPath\/happyPath-2[4:18] 23:20:43.895-23:20:44.210 GetV2gRootCertificate"},{"id":5,"group":1,"content":"pnc\/happyPath\/happyPath-2[5:23]","start":1725492044215,"end":1725492044950,"title":"pnc\/happyPath\/happyPath-2[5:23] 23:20:44.215-23:20:44.950 AddOEMProvCert"},{"id":6,"group":1,"content":"pnc\/happyPath\/happyPath-2[6:29]","start":1725492044957,"end":1725492045282,"title":"pnc\/happyPath\/happyPath-2[6:29] 23:20:44.957-23:20:45.282 GetOEMProvCert"},{"id":7,"group":1,"content":"pnc\/happyPath\/happyPath-2[7:34]","start":1725492045290,"end":1725492045606,"title":"pnc\/happyPath\/happyPath-2[7:34] 23:20:45.290-23:20:45.606 LookupVehicle"},{"id":8,"group":1,"content":"pnc\/happyPath\/happyPath-2[8:39]","start":1725492045611,"end":1725492046784,"title":"pnc\/happyPath\/happyPath-2[8:39] 23:20:45.611-23:20:46.784 GenerateSignedContractData"},{"id":9,"group":1,"content":"pnc\/happyPath\/happyPath-2[9:45]","start":1725492046788,"end":1725492047489,"title":"pnc\/happyPath\/happyPath-2[9:45] 23:20:46.788-23:20:47.489 CreateSignedContractData"},{"id":10,"group":1,"content":"pnc\/happyPath\/happyPath-2[10:51]","start":1725492047494,"end":1725492048221,"title":"pnc\/happyPath\/happyPath-2[10:51] 23:20:47.494-23:20:48.221 CreateAndForwardSignedContractData"},{"id":11,"group":1,"content":"pnc\/happyPath\/happyPath-2[11:57]","start":1725492048226,"end":1725492048546,"title":"pnc\/happyPath\/happyPath-2[11:57] 23:20:48.226-23:20:48.546 LookupContract"},{"id":12,"group":1,"content":"pnc\/happyPath\/happyPath-2[12:62]","start":1725492048551,"end":1725492048863,"title":"pnc\/happyPath\/happyPath-2[12:62] 23:20:48.551-23:20:48.863 provideSignedContractData"},{"id":13,"group":1,"content":"pnc\/happyPath\/happyPath-2[13:67]","start":1725492048867,"end":1725492049208,"title":"pnc\/happyPath\/happyPath-2[13:67] 23:20:48.867-23:20:49.208 getContract"},{"id":14,"group":1,"content":"pnc\/happyPath\/happyPath-2[14:72]","start":1725492049213,"end":1725492049537,"title":"pnc\/happyPath\/happyPath-2[14:72] 23:20:49.213-23:20:49.537 SetDefaultContract"},{"id":15,"group":1,"content":"pnc\/happyPath\/happyPath-2[15:77]","start":1725492049542,"end":1725492050416,"title":"pnc\/happyPath\/happyPath-2[15:77] 23:20:49.542-23:20:50.416 DeleteSignedContractData"},{"id":16,"group":1,"content":"pnc\/happyPath\/happyPath-2[16:82]","start":1725492050421,"end":1725492050944,"title":"pnc\/happyPath\/happyPath-2[16:82] 23:20:50.421-23:20:50.944 DeleteOEMProvCert"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
