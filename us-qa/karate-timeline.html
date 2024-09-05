@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"pnc\/happyPath\/happyPath-2[1:7]","start":1725495298313,"end":1725495301292,"title":"pnc\/happyPath\/happyPath-2[1:7] 00:14:58.313-00:15:01.292 PKI Gateway Simple Enroll"},{"id":2,"group":1,"content":"pnc\/happyPath\/happyPath-2[2:10]","start":1725495301302,"end":1725495303337,"title":"pnc\/happyPath\/happyPath-2[2:10] 00:15:01.302-00:15:03.337 PKI Gateway CaCerts"},{"id":3,"group":1,"content":"pnc\/happyPath\/happyPath-2[3:13]","start":1725495303344,"end":1725495303393,"title":"pnc\/happyPath\/happyPath-2[3:13] 00:15:03.344-00:15:03.393 GetAllRootCertificates"},{"id":4,"group":1,"content":"pnc\/happyPath\/happyPath-2[4:18]","start":1725495303405,"end":1725495303482,"title":"pnc\/happyPath\/happyPath-2[4:18] 00:15:03.405-00:15:03.482 GetV2gRootCertificate"},{"id":5,"group":1,"content":"pnc\/happyPath\/happyPath-2[5:23]","start":1725495303490,"end":1725495304457,"title":"pnc\/happyPath\/happyPath-2[5:23] 00:15:03.490-00:15:04.457 AddOEMProvCert"},{"id":6,"group":1,"content":"pnc\/happyPath\/happyPath-2[6:29]","start":1725495304467,"end":1725495304528,"title":"pnc\/happyPath\/happyPath-2[6:29] 00:15:04.467-00:15:04.528 GetOEMProvCert"},{"id":7,"group":1,"content":"pnc\/happyPath\/happyPath-2[7:34]","start":1725495304533,"end":1725495304585,"title":"pnc\/happyPath\/happyPath-2[7:34] 00:15:04.533-00:15:04.585 LookupVehicle"},{"id":8,"group":1,"content":"pnc\/happyPath\/happyPath-2[8:39]","start":1725495304590,"end":1725495305852,"title":"pnc\/happyPath\/happyPath-2[8:39] 00:15:04.590-00:15:05.852 GenerateSignedContractData"},{"id":9,"group":1,"content":"pnc\/happyPath\/happyPath-2[9:45]","start":1725495305857,"end":1725495306713,"title":"pnc\/happyPath\/happyPath-2[9:45] 00:15:05.857-00:15:06.713 CreateSignedContractData"},{"id":10,"group":1,"content":"pnc\/happyPath\/happyPath-2[10:51]","start":1725495306718,"end":1725495307722,"title":"pnc\/happyPath\/happyPath-2[10:51] 00:15:06.718-00:15:07.722 CreateAndForwardSignedContractData"},{"id":11,"group":1,"content":"pnc\/happyPath\/happyPath-2[11:57]","start":1725495307728,"end":1725495307799,"title":"pnc\/happyPath\/happyPath-2[11:57] 00:15:07.728-00:15:07.799 LookupContract"},{"id":12,"group":1,"content":"pnc\/happyPath\/happyPath-2[12:62]","start":1725495307804,"end":1725495307951,"title":"pnc\/happyPath\/happyPath-2[12:62] 00:15:07.804-00:15:07.951 provideSignedContractData"},{"id":13,"group":1,"content":"pnc\/happyPath\/happyPath-2[13:67]","start":1725495307956,"end":1725495308048,"title":"pnc\/happyPath\/happyPath-2[13:67] 00:15:07.956-00:15:08.048 getContract"},{"id":14,"group":1,"content":"pnc\/happyPath\/happyPath-2[14:72]","start":1725495308053,"end":1725495308124,"title":"pnc\/happyPath\/happyPath-2[14:72] 00:15:08.053-00:15:08.124 SetDefaultContract"},{"id":15,"group":1,"content":"pnc\/happyPath\/happyPath-2[15:77]","start":1725495308129,"end":1725495309716,"title":"pnc\/happyPath\/happyPath-2[15:77] 00:15:08.129-00:15:09.716 DeleteSignedContractData"},{"id":16,"group":1,"content":"pnc\/happyPath\/happyPath-2[16:82]","start":1725495309722,"end":1725495310777,"title":"pnc\/happyPath\/happyPath-2[16:82] 00:15:09.722-00:15:10.777 DeleteOEMProvCert"},{"id":17,"group":1,"content":"pnc\/happyPath\/happyPath-2[17:87]","start":1725495310781,"end":1725495310914,"title":"pnc\/happyPath\/happyPath-2[17:87] 00:15:10.781-00:15:10.914 Webhooks"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
